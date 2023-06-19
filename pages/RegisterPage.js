@@ -1,8 +1,8 @@
 import { Selector, t } from "testcafe";
 
-class RegisterPage{
-    constructor(){
-        this.genderOption = Selector('input[type="radio"]');
+class RegisterPage {
+    constructor() {
+        this.genderOption = Selector('label.forcheckbox');
         this.firstNameInput = Selector('input#FirstName');
         this.lastNameInput = Selector('input#LastName');
         this.dayOfBirthDropdown = Selector('select[name="DateOfBirthDay"]');
@@ -15,22 +15,25 @@ class RegisterPage{
         this.successfulRegistrationConfirmation = Selector('div.result').withText('Your registration completed');
     }
 
-    async selectDay(day){
+    async selectDay(day) {
         const dayOption = this.dayOfBirthDropdown.find('option');
         await t
-            .click(dayOption).withText(day);
+            .click(this.dayOfBirthDropdown)
+            .click(dayOption.withText(day));
     }
 
-    async selectDay(month){
+    async selectMonth(month) {
         const monthOption = this.monthOfBirthDropdown.find('option');
         await t
-            .click(monthOption).withText(month);
+            .click(this.monthOfBirthDropdown)
+            .click(monthOption.withText(month));
     }
 
-    async selectDay(year){
+    async selectYear(year) {
         const yearOption = this.yearOfBirthDropdown.find('option');
         await t
-            .click(yearOption).withText(year);
+            .click(this.yearOfBirthDropdown)
+            .click(yearOption.withText(year));
     }
 }
 

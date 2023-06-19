@@ -4,7 +4,7 @@ class LoginPage{
     constructor(){
         this.emailInput = Selector('input#Email');
         this.passwordInput = Selector('input#Password');
-        this.loginButton = Selector('button.button-1 login-button');
+        this.loginButton = Selector('button[class="button-1 login-button"]');
         this.returningCustomerHeader = Selector('strong').withText('Returning Customer')
     }
 }

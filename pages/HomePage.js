@@ -7,7 +7,7 @@ class HomePage{
         this.loginLink = Selector('a').withText('Log in');
         this.shoppingCartLink = Selector('a').withText('Shopping cart');
         this.wishlistLink = Selector('a').withText('Wishlist');
-        this.myAccountLink = Selector('a').withText('My Account');
+        this.myAccountLink = Selector('a').withText('My account');
         this.logoutLink = Selector('a').withText('Log out');
         this.currencyDropdown = Selector('select#customerCurrency');
         this.searchInput = Selector('input#small-searchterms')
