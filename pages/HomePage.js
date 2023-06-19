@@ -20,7 +20,6 @@ class HomePage{
     async search(product){
         await t
             .typeText(this.productSearch, product)
-            .wait(3000)
             .pressKey('enter');
     }
 
