@@ -1,0 +1,22 @@
+{
+  "name": "testcafe-demonopcommerce",
+  "version": "1.0.0",
+  "description": "Automation test script for Demo Nop Commerce written in TestCafe",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nikkapallado/TestCafe-DemoNopCommerce.git"
+  },
+  "author": "Niks Pallado",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nikkapallado/TestCafe-DemoNopCommerce/issues"
+  },
+  "homepage": "https://github.com/nikkapallado/TestCafe-DemoNopCommerce#readme",
+  "devDependencies": {
+    "testcafe": "^2.6.2"
+  }
+}
