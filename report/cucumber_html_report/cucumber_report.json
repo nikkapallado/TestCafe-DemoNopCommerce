@@ -1,0 +1,431 @@
+[
+  {
+    "description": "    As a visitor, I can create a new account with the registration feature",
+    "elements": [
+      {
+        "description": "",
+        "id": "registration-feature;scenario-outline-name:-validate-successful-registration",
+        "keyword": "Scenario Outline",
+        "line": 25,
+        "name": "Scenario Outline name: Validate successful registration",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 9603117799
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 6,
+            "name": "I access the home page",
+            "match": {
+              "location": "features\\step_definitions\\RegistrationSteps.js:11"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1969111899
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 10,
+            "name": "I open the registration page",
+            "match": {
+              "location": "features\\step_definitions\\RegistrationSteps.js:15"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1734826599
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 11,
+            "name": "I select the gender as \"Female\"",
+            "match": {
+              "location": "features\\step_definitions\\RegistrationSteps.js:19"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 492784899
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 12,
+            "name": "I enter in the first name as \"Betty\"",
+            "match": {
+              "location": "features\\step_definitions\\RegistrationSteps.js:23"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 702311499
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 13,
+            "name": "I enter in the last name as \"Lafea\"",
+            "match": {
+              "location": "features\\step_definitions\\RegistrationSteps.js:27"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 713068800
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 14,
+            "name": "I select a day of birth as \"12\"",
+            "match": {
+              "location": "features\\step_definitions\\RegistrationSteps.js:31"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 800054900
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 15,
+            "name": "I select a month of birth as \"January\"",
+            "match": {
+              "location": "features\\step_definitions\\RegistrationSteps.js:36"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 807914299
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 16,
+            "name": "I select a year of birth as \"1997\"",
+            "match": {
+              "location": "features\\step_definitions\\RegistrationSteps.js:41"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 780967199
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 17,
+            "name": "I enter an email as \"bettylafea@sample.com\"",
+            "match": {
+              "location": "features\\step_definitions\\RegistrationSteps.js:46"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1698958099
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 18,
+            "name": "I enter a password as \"password\"",
+            "match": {
+              "location": "features\\step_definitions\\RegistrationSteps.js:51"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 962479099
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 19,
+            "name": "I enter in the confirm password as \"password\"",
+            "match": {
+              "location": "features\\step_definitions\\RegistrationSteps.js:55"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1020052100
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 20,
+            "name": "I click the register button",
+            "match": {
+              "location": "features\\step_definitions\\RegistrationSteps.js:59"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1538451900
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 21,
+            "name": "Successful registration message is displayed",
+            "match": {
+              "location": "features\\step_definitions\\RegistrationSteps.js:63"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 179026499
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 2531399
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 1281200
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@e2e",
+            "line": 8
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "registration-feature;scenario-outline-name:-validate-successful-registration",
+        "keyword": "Scenario Outline",
+        "line": 26,
+        "name": "Scenario Outline name: Validate successful registration",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 1117040899
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 6,
+            "name": "I access the home page",
+            "match": {
+              "location": "features\\step_definitions\\RegistrationSteps.js:11"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1232850099
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 10,
+            "name": "I open the registration page",
+            "match": {
+              "location": "features\\step_definitions\\RegistrationSteps.js:15"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1282373199
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 11,
+            "name": "I select the gender as \"Male\"",
+            "match": {
+              "location": "features\\step_definitions\\RegistrationSteps.js:19"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 499531800
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 12,
+            "name": "I enter in the first name as \"John\"",
+            "match": {
+              "location": "features\\step_definitions\\RegistrationSteps.js:23"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 708555899
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 13,
+            "name": "I enter in the last name as \"Doe\"",
+            "match": {
+              "location": "features\\step_definitions\\RegistrationSteps.js:27"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 664386900
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 14,
+            "name": "I select a day of birth as \"7\"",
+            "match": {
+              "location": "features\\step_definitions\\RegistrationSteps.js:31"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 880048900
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 15,
+            "name": "I select a month of birth as \"March\"",
+            "match": {
+              "location": "features\\step_definitions\\RegistrationSteps.js:36"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 834266299
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 16,
+            "name": "I select a year of birth as \"2001\"",
+            "match": {
+              "location": "features\\step_definitions\\RegistrationSteps.js:41"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 837998999
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 17,
+            "name": "I enter an email as \"jdoe@sample.com\"",
+            "match": {
+              "location": "features\\step_definitions\\RegistrationSteps.js:46"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1170546900
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 18,
+            "name": "I enter a password as \"password123\"",
+            "match": {
+              "location": "features\\step_definitions\\RegistrationSteps.js:51"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 914818699
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 19,
+            "name": "I enter in the confirm password as \"password123\"",
+            "match": {
+              "location": "features\\step_definitions\\RegistrationSteps.js:55"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 891042500
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 20,
+            "name": "I click the register button",
+            "match": {
+              "location": "features\\step_definitions\\RegistrationSteps.js:59"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1172519299
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 21,
+            "name": "Successful registration message is displayed",
+            "match": {
+              "location": "features\\step_definitions\\RegistrationSteps.js:63"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 88376900
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 1021899
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 1073099
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@e2e",
+            "line": 8
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "registration-feature",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Registration Feature",
+    "tags": [],
+    "uri": "features\\registration.feature"
+  }
+]
