@@ -6,8 +6,12 @@
   "scripts": {
     "test-all": "testcafe",
     "test-firefox-regression-2": "testcafe -c 2 firefox --fixture-meta type=regression",
+    "test-all-reporter-html-3": "testcafe -c 3 --reporter html:report/html_report/report.html",
+    "test-all-reporter-allure-smoke-3": "testcafe -c 3 --reporter allure --screenshots path=report/allure_report,takeOnFails=true --fixture-meta type=smoke",
     "test-cucumber-e2e": "cucumber-js --tags \"@e2e\"",
-    "test-cucumber-e2e-reporter": "cucumber-js --tags \"@e2e\" -f summary -f json:report/cucumber_html_report/cucumber_report.json"
+    "test-cucumber-e2e-reporter": "cucumber-js --tags \"@e2e\" -f summary -f json:report/cucumber_html_report/cucumber_report.json",
+    "open-cucumber-html-report": "node cucumber-html-reporter.js",
+    "open-allure-report": "allure generate report/allure_report/allure_results --clean -o report/allure_report/output && allure open report/allure_report/output"
   },
   "repository": {
     "type": "git",
@@ -22,8 +26,11 @@
   "devDependencies": {
     "@cucumber/cucumber": "^9.1.2",
     "@ffmpeg-installer/ffmpeg": "^1.1.0",
+    "allure-commandline": "^2.22.4",
     "base64-img": "^1.0.4",
     "cucumber-html-reporter": "^7.1.0",
-    "testcafe": "^2.6.2"
+    "testcafe": "^2.6.2",
+    "testcafe-reporter-allure": "^1.0.5",
+    "testcafe-reporter-html": "^1.4.6"
   }
 }
