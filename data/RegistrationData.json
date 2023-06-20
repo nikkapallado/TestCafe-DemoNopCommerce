@@ -1,0 +1,22 @@
+[
+    {
+        "gender": "Female",
+        "firstname": "Betty",
+        "lastname": "Lafea",
+        "dayOfBirth": "12",
+        "monthOfBirth": "January",
+        "yearOfBirth": "1997",
+        "email": "sample@asdqwe.com",
+        "password": "password"
+    },
+    {
+        "gender": "Male",
+        "firstname": "John",
+        "lastname": "Doe",
+        "dayOfBirth": "7",
+        "monthOfBirth": "May",
+        "yearOfBirth": "2001",
+        "email": "jdoe@asdqwe.com",
+        "password": "password123"
+    }
+]
