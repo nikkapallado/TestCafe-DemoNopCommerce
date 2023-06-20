@@ -129,6 +129,5 @@ dist
 .yarn/install-state.gz
 .pnp.*
 
-#artifacts
-*.png
-*.mp4
+#report outputs
+report/
