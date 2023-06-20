@@ -4,7 +4,8 @@
   "description": "Automation test script for Demo Nop Commerce written in TestCafe",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test-all": "testcafe",
+    "test-firefox-regression-2": "testcafe -c 2 firefox --fixture-meta type=regression"
   },
   "repository": {
     "type": "git",
@@ -17,6 +18,7 @@
   },
   "homepage": "https://github.com/nikkapallado/TestCafe-DemoNopCommerce#readme",
   "devDependencies": {
+    "@ffmpeg-installer/ffmpeg": "^1.1.0",
     "testcafe": "^2.6.2"
   }
 }
