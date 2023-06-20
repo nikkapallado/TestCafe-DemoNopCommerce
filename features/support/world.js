@@ -1,4 +1,4 @@
-const {setWorldConstructor} = require('cucumber');
+const {setWorldConstructor} = require('@cucumber/cucumber');
 const testControllerHolder = require('./testControllerHolder');
 const base64Img = require('base64-img');
 
