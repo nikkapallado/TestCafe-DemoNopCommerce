@@ -1,14 +1,11 @@
 const assert = require('assert');
-const { Given, When, Then, TestCaseHookDefinition } = require('@cucumber/cucumber');
+const { Given, When, Then } = require('@cucumber/cucumber');
 
 const { ClientFunction } = require("testcafe");
-const homePage = require("../pages/HomePage_BDD.js");
-const registerPage = require("../pages/RegisterPage_BDD.js");
-import LoginPage from "../pages/LoginPage.js";
-import CustomerPage from "../pages/CustomerPage.js";
+const homePage = require("../../pages/HomePage_BDD.js");
+const registerPage = require("../../pages/RegisterPage_BDD.js");
 
 const URL = 'https://demo.nopcommerce.com/';
-const getPageURL = ClientFunction(() => window.location.href);
 var randomNumber = Math.floor(Math.random() * 10000);
 
 Given('I access the home page', async function () {
@@ -33,17 +30,17 @@ When('I enter in the last name as {string}', async function (lastname) {
 
 When('I select a day of birth as {string}', async function (dayOfBirth) {
     await testController.click(registerPage.RegisterPage.dayOfBirthDropdown());
-    await registerPage.RegisterPage.selectDay(dayOfBirth());
+    await testController.click(registerPage.RegisterPage.listOption(dayOfBirth));
 });
 
 When('I select a month of birth as {string}', async function (monthOfBirth) {
     await testController.click(registerPage.RegisterPage.monthOfBirthDropdown());
-    await registerPage.RegisterPage.selectMonth(monthOfBirth());
+    await testController.click(registerPage.RegisterPage.listOption(monthOfBirth));
 });
 
 When('I select a year of birth as {string}', async function (yearOfBirth) {
     await testController.click(registerPage.RegisterPage.yearOfBirthDropdown());
-    await registerPage.RegisterPage.selectYear(yearOfBirth());
+    await testController.click(registerPage.RegisterPage.listOption(yearOfBirth));
 });
 
 When('I enter an email as {string}', async function (email) {
