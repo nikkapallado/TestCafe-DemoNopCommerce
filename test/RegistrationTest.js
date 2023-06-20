@@ -11,6 +11,7 @@ const getPageURL = ClientFunction(() => window.location.href);
 var randomNumber = Math.floor(Math.random() * 10000);
 
 fixture('Registration Fixture')
+    .meta({"type":"smoke"})    
     .page(URL);
 
 test('Assert Home Page Test', async t => {
@@ -50,5 +51,9 @@ RegistrationData.forEach(data => {
             .click(CustomerPage.ordersLink)
             .expect(CustomerPage.noOrdersLabel.exists).ok()
             .takeScreenshot();
+    }).meta({
+        ID: 'R-001',
+        SEVERITY: 'blocker',
+        STORY: 'Story-001'
     });
 });
