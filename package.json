@@ -19,6 +19,7 @@
   "homepage": "https://github.com/nikkapallado/TestCafe-DemoNopCommerce#readme",
   "devDependencies": {
     "@ffmpeg-installer/ffmpeg": "^1.1.0",
+    "cucumber": "^6.0.7",
     "testcafe": "^2.6.2"
   }
 }
