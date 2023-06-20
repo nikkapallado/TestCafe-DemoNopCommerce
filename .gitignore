@@ -130,4 +130,8 @@ dist
 .pnp.*
 
 #report outputs
-report/
+report/cucumber_html_report
+report/allure_report
+report/html_report
+report/videos
+report/screenshots
