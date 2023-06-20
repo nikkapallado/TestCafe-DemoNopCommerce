@@ -1,7 +1,7 @@
 {
     "browsers": "chrome",
     "src": "test",
-    "reporter": "list",
+    "reporter": "allure",
     "screenshots": {
         "path": "report/screenshots",
         "takeOnFails": true,
@@ -12,7 +12,7 @@
         "singleFile": true,
         "failedOnly": true
     },
-    "concurrency": 1,
+    "concurrency": 3,
     "selectorTimeout": 3000,
     "assertionTimeout": 1000,
     "pageLoadTimeout": 1000,
