@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test-all": "testcafe",
-    "test-firefox-regression-2": "testcafe -c 2 firefox --fixture-meta type=regression"
+    "test-firefox-regression-2": "testcafe -c 2 firefox --fixture-meta type=regression",
+    "test-cucumber-e2e": "cucumber-js --tags \"@e2e\"",
+    "test-cucumber-e2e-reporter": "cucumber-js --tags \"@e2e\" -f summary -f json:report/cucumber_html_report/cucumber_report.json"
   },
   "repository": {
     "type": "git",
@@ -20,7 +22,8 @@
   "devDependencies": {
     "@cucumber/cucumber": "^9.1.2",
     "@ffmpeg-installer/ffmpeg": "^1.1.0",
-    "cucumber": "^6.0.7",
+    "base64-img": "^1.0.4",
+    "cucumber-html-reporter": "^7.1.0",
     "testcafe": "^2.6.2"
   }
 }
