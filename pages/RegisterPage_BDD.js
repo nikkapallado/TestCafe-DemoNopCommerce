@@ -38,7 +38,7 @@ exports.RegisterPage = {
     successfulRegistrationConfirmation: function(){
         return select('div.result').withText('Your registration completed');
     },
-    listOption: function(){
-        return select('option')
+    listOption: function(option){
+        return select('option').withText(option);
     }
 }
