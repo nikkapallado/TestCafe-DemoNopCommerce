@@ -15,6 +15,7 @@ var randomNumber = Math.floor(Math.random() * 10000);
 var userEmail = `sample${randomNumber}@asdqwe.com`
 
 fixture('Registration Fixture')
+    .meta({"type":"regression"})
     .page(URL);
 
 test('Place order and checkout test', async t => {
@@ -80,5 +81,9 @@ test('Place order and checkout test', async t => {
         //Go to orders
         .click(CustomerPage.ordersLink)
         .expect(CustomerPage.noOrdersLabel.exists).notOk()
-        .takeScreenshot()
+        .takeScreenshot();
 });
+
+test('Change currency test', async t => {
+    await HomePage.changeCurrency('Euro');
+})
