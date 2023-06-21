@@ -1,7 +1,7 @@
 {
     "browsers": "chrome",
     "src": "test",
-    "reporter": "allure",
+    "reporter": "list",
     "screenshots": {
         "path": "report/screenshots",
         "takeOnFails": true,
