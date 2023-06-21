@@ -9,7 +9,9 @@ jobs:
 
     steps:
     - uses: actions/checkout@v3
-    - name: Install TestCafe from npm and run
-      uses: DevExpress/testcafe-action@latest
+    - uses: actions/setup-node@v3
       with:
-        args: chrome test
+        node-version: 18.16.0
+    - uses: DevExpress/testcafe-action@latest
+      with:
+        args: "chrome --fixture-meta type=regression"
