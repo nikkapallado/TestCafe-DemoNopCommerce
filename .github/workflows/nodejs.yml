@@ -1,0 +1,15 @@
+name: Demo Nop Commerce Github Workflow
+
+on: [push]
+
+jobs:
+  build:
+    name: Run Demo Nop Commerce Test
+    runs-on: windows-latest
+
+    steps:
+    - uses: actions/checkout@v3
+    - name: Install TestCafe from npm and run
+      uses: DevExpress/testcafe-action@latest
+      with:
+        args: chrome test
