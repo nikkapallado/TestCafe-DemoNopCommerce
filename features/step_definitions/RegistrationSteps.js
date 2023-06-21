@@ -2,8 +2,8 @@ const assert = require('assert');
 const { Given, When, Then } = require('@cucumber/cucumber');
 
 const { ClientFunction } = require("testcafe");
-const homePage = require("../../pages/HomePage_BDD.js");
-const registerPage = require("../../pages/RegisterPage_BDD.js");
+const homePage = require("../../test/pages/HomePage_BDD.js");
+const registerPage = require("../../test/pages/RegisterPage_BDD.js");
 
 const URL = 'https://demo.nopcommerce.com/';
 var randomNumber = Math.floor(Math.random() * 10000);

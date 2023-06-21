@@ -13,7 +13,8 @@
     "test-cucumber-e2e": "cucumber-js --tags \"@e2e\"",
     "test-cucumber-e2e-reporter": "cucumber-js --tags \"@e2e\" -f summary -f json:report/cucumber_html_report/cucumber_report.json",
     "open-cucumber-html-report": "node cucumber-html-reporter.js",
-    "open-allure-report": "allure generate report/allure_report/allure_results --clean -o report/allure_report/output && allure open report/allure_report/output"
+    "open-allure-report": "allure generate report/allure_report/allure_results --clean -o report/allure_report/output && allure open report/allure_report/output",
+    "docker-firefox-all": "docker run -v ${PWD}/test:/test -it testcafe/testcafe firefox test/*.js"
   },
   "repository": {
     "type": "git",

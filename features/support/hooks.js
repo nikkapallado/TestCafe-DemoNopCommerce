@@ -28,7 +28,7 @@ function runTest(iteration, browser) {
             const runner = tc.createRunner();
             return runner
                 .src('./test.js')
-                .screenshots('report/screenshots/', true)
+                .screenshots('test/report/screenshots/', true)
                 .browsers(browser)
                 .run()
                 .catch(function(error) {

@@ -1,9 +1,9 @@
 const DOC_ALLURE_CONFIG = {
     CLEAN_REPORT_DIR: true, //set to false if you want to see history
     COPY_HISTORY: true,
-    RESULT_DIR: '/report/allure_report/allure_results',
-    REPORT_DIR: '/report/allure_report/allure_results',
-    SCREENSHOT_DIR: '/report/allure_report',
+    RESULT_DIR: 'report/allure_report/allure_results',
+    REPORT_DIR: 'report/allure_report/allure_results',
+    SCREENSHOT_DIR: 'report/allure_report',
     META: {
         STORY_ID: 'STORY',
         TEST_ID: 'ID',

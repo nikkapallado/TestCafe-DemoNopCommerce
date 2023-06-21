@@ -1,12 +1,12 @@
 import { ClientFunction } from "testcafe";
-import HomePage from "../pages/HomePage.js";
-import RegisterPage from "../pages/RegisterPage.js";
-import LoginPage from "../pages/LoginPage.js";
-import CustomerPage from "../pages/CustomerPage.js";
-import ShoppingCartPage from "../pages/ShoppingCartPage.js";
-import CheckoutPage from "../pages/CheckoutPage.js";
-import ProductDetailsPage from "../pages/ProductDetailsPage.js";
-import SearchResultsPage from "../pages/SearchResultsPage.js";
+import HomePage from "./pages/HomePage.js";
+import RegisterPage from "./pages/RegisterPage.js";
+import LoginPage from "./pages/LoginPage.js";
+import CustomerPage from "./pages/CustomerPage.js";
+import ShoppingCartPage from "./pages/ShoppingCartPage.js";
+import CheckoutPage from "./pages/CheckoutPage.js";
+import ProductDetailsPage from "./pages/ProductDetailsPage.js";
+import SearchResultsPage from "./pages/SearchResultsPage.js";
 
 
 const URL = 'https://demo.nopcommerce.com/';
@@ -81,7 +81,6 @@ test('Place order and checkout test', async t => {
         //Go to orders
         .click(CustomerPage.ordersLink)
         .expect(CustomerPage.noOrdersLabel.exists).notOk()
-        .takeScreenshot();
 });
 
 test('Change currency test', async t => {
