@@ -13,6 +13,7 @@
     "test-cucumber-e2e": "cucumber-js --tags \"@e2e\"",
     "test-cucumber-e2e-reporter": "cucumber-js --tags \"@e2e\" -f summary -f json:report/cucumber_html_report/cucumber_report.json",
     "test-all-mobile-1": "testcafe -c 1 remote test/*.js --qr-code",
+    "test-all-reporter-portal-chrome": "testcafe chrome test/*.js --reporter reportportal",
     "open-cucumber-html-report": "node cucumber-html-reporter.js",
     "open-allure-report": "allure generate report/allure_report/allure_results --clean -o report/allure_report/output && allure open report/allure_report/output",
     "docker-firefox-all": "docker run -v ${PWD}/test:/test -it testcafe/testcafe firefox test/*.js"
@@ -36,6 +37,7 @@
     "cucumber-html-reporter": "^7.1.0",
     "testcafe": "^2.6.2",
     "testcafe-reporter-allure": "^1.0.5",
-    "testcafe-reporter-html": "^1.4.6"
+    "testcafe-reporter-html": "^1.4.6",
+    "testcafe-reporter-reportportal": "^1.0.29"
   }
 }
