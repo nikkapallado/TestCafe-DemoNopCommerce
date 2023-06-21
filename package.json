@@ -6,8 +6,10 @@
   "scripts": {
     "test-all": "testcafe",
     "test-firefox-regression-2": "testcafe -c 2 firefox --fixture-meta type=regression",
+    "test-smoke-3": "testcafe -c 3 --fixture-meta type=smoke",
+    "test-smoke-headless-3": "testcafe chrome:headless --fixture-meta type=smoke",
     "test-all-reporter-html-3": "testcafe -c 3 --reporter html:report/html_report/report.html",
-    "test-all-reporter-allure-smoke-3": "testcafe -c 3 --reporter allure --screenshots path=report/allure_report,takeOnFails=true --fixture-meta type=smoke",
+    "test-reporter-allure-smoke-3": "testcafe -c 3 --reporter allure --screenshots path=report/allure_report,takeOnFails=true --fixture-meta type=smoke",
     "test-cucumber-e2e": "cucumber-js --tags \"@e2e\"",
     "test-cucumber-e2e-reporter": "cucumber-js --tags \"@e2e\" -f summary -f json:report/cucumber_html_report/cucumber_report.json",
     "open-cucumber-html-report": "node cucumber-html-reporter.js",
@@ -24,6 +26,7 @@
   },
   "homepage": "https://github.com/nikkapallado/TestCafe-DemoNopCommerce#readme",
   "devDependencies": {
+    "@applitools/eyes-testcafe": "^1.17.4",
     "@cucumber/cucumber": "^9.1.2",
     "@ffmpeg-installer/ffmpeg": "^1.1.0",
     "allure-commandline": "^2.22.4",
