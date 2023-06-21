@@ -2,6 +2,10 @@ name: Demo Nop Commerce Github Workflow
 
 on: [push]
 
+env:
+  APPLITOOLS_API_KEY: ${{ secrets.APPLITOOLS_API_KEY }}
+  APPLITOOLS_BATCH_ID: ${{ github.event.pull_request.head.sha || github.sha }}
+
 jobs:
   build:
     name: Run Demo Nop Commerce Test
@@ -14,4 +18,4 @@ jobs:
         node-version: 18.16.0
     - uses: DevExpress/testcafe-action@latest
       with:
-        args: "chrome --fixture-meta type=regression"
+        args: "chrome --fixture-meta type=smoke"
