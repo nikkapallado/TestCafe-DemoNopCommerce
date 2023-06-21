@@ -1,5 +1,5 @@
 module.exports = {
-    apiKey: process.env.APPLITOOLS_API_KEY || 'your APPLITOOLS_API_KEY',
+    apiKey: 'E2mO4eRNE106sa109mcqz17NAZ3105rbBk7KIZMagoXgme0TE110' || process.env.APPLITOOLS_API_KEY,
     //
     browser: [
         // Add browsers with different viewports
